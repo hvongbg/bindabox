@@ -2,7 +2,7 @@
 \alias{candy}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%function to create correlation covariance matrix of binary data
+correlation covariance matrix of binary data
 }
 \description{
 the function calculates for each row, the probability of correct anwsers for each item and the probabilties for correct answers for the combination any of two items. then these probabilties are used to create the correltaion and covariance matrix --  necessary to calcualte fixed-link models in SEM

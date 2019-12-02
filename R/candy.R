@@ -55,6 +55,11 @@ candy <- function(my_data, NAME){
   for (i in 1:Item_Anzahl){
     prob_mat[i,i] <- wahr[i]*(1-wahr[i])
   }
+  SD                <-length(my_data)
+  for (i in 1:Item_Anzahl){
+    SD[i] <<- sqrt(wahr[i]*(1-wahr[i]))
+  }
+
   NAME <<- prob_mat
   list <- c(Teilnehmer_Anzahl, prob_mat)
   return(prob_mat)
