@@ -5,6 +5,6 @@ Version: 0.1.0
 Author: Helene M. von Gugelberg
 Maintainer: <vongugelberg.h@gmail.com>
 Description: A package to work with binary data. Calculate correlation, covariance matrix of binary data.
-License: FALSE
+License: FOSS
 Encoding: UTF-8
 LazyData: true
