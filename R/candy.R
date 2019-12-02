@@ -1,5 +1,7 @@
 candy <- function(my_data, NAME){
 
+#my_data<-dt
+
   if(sum(is.na(my_data))!=0) {
     stop("missing values found. candy cannot handle missing values")
   }
@@ -18,6 +20,8 @@ candy <- function(my_data, NAME){
   #prob_mat will contain probability values of correct answers
   prob_mat          <- matrix(NA, ncol = length(my_data),
                               nrow = length(my_data))
+  #for SD
+  summer                <-length(my_data)
 
   my_array          <-as.data.frame(my_array)
   prob_mat          <-as.data.frame(prob_mat)
@@ -41,7 +45,7 @@ candy <- function(my_data, NAME){
   first <- 1
   second <- 2
 
-  #CundR comparison
+  #first and second comparison
   #p each additional col in wahr
   for (p in k:length(wahr)) {
     prob_mat[second,first]<- wahr[p] - (wahr[first]* wahr[second])
@@ -55,13 +59,15 @@ candy <- function(my_data, NAME){
   for (i in 1:Item_Anzahl){
     prob_mat[i,i] <- wahr[i]*(1-wahr[i])
   }
-  SD                <-length(my_data)
+
   for (i in 1:Item_Anzahl){
-    SD[i] <<- sqrt(wahr[i]*(1-wahr[i]))
+    summer[i] <- sqrt(wahr[i]*(1-wahr[i]))
   }
 
-  NAME <<- prob_mat
-  list <- c(Teilnehmer_Anzahl, prob_mat)
-  return(prob_mat)
+  NAME<<- prob_mat
+  SD <<-summer
 
 }
+
+
+
