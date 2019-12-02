@@ -65,7 +65,7 @@ candy <- function(my_data, NAME){
   }
 
   NAME<<- prob_mat
-  SD <<-summer
+  StandD <<-summer
 
 }
 
