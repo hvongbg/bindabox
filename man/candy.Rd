@@ -8,22 +8,25 @@ correlation covariance matrix of binary data
 the function calculates for each row, the probability of correct anwsers for each item and the probabilties for correct answers for the combination any of two items. then these probabilties are used to create the correltaion and covariance matrix --  necessary to calcualte fixed-link models in SEM
 }
 \usage{
-candy(my_data, NAME)
+candy(my_data, output_matrix, Item_SD)
 }
 
 \arguments{
   \item{my_data}{
 my_data is the dataframe entered, containing only the binary data and no ID numbers. Must be a df or matrix
 }
-  \item{NAME}{
-the matrix created is called NAME
+  \item{output_matrix}{
+the matrix created with default name output_matrix unless other name is provided
 }
+   \item{Item_SD}{
+object is a list of SD of the propability of answering any two items correct 
 }
 \details{
 
 }
 \value{
- NAME -- matrix containing calcualted values
+ output_matrix -- matrix containing calcualted values
+ Item_SD -- list of SD
 }
 \references{
 
@@ -50,7 +53,7 @@ data <- rbind(a, b, c) #example data
 
 candy(data) #call function
 
-NAME #matrix with saved values
+output_matrix #matrix with saved values
 
-StandD #SD for each item
+Item_SD #SD for each item
 }
