@@ -1,6 +1,6 @@
 \name{candy}
 \alias{candy}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 correlation covariance matrix of binary data
 }
@@ -10,7 +10,7 @@ the function calculates for each row, the probability of correct anwsers for eac
 \usage{
 candy(my_data, NAME)
 }
-%-
+
 \arguments{
   \item{my_data}{
 my_data is the dataframe entered, containing only the binary data and no ID numbers
@@ -20,25 +20,25 @@ the matrix created is called NAME
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+
 }
 \value{
  NAME -- matrix containing calcualted values
 }
 \references{
-%% ~put references to the literature/web site here ~
+
 }
 \author{
-%%  ~~who you are~~
+
 }
 \note{
-%%  ~~further notes~~
+goal is to create a toolbox for handling binary data
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
+
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+
 }
 \examples{
 
@@ -52,7 +52,4 @@ candy(data) #call function
 
 NAME #matrix with saved values
 
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+StandD #SD for each item
