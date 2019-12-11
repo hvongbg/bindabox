@@ -20,6 +20,7 @@ the matrix created with default name output_matrix unless other name is provided
 }
    \item{Item_SD}{
 object is a list of SD of the propability of answering any two items correct 
+  }
 }
 \details{
 
