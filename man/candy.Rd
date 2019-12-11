@@ -53,3 +53,4 @@ candy(data) #call function
 NAME #matrix with saved values
 
 StandD #SD for each item
+}
