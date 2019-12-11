@@ -63,8 +63,8 @@ candy <- function(my_data, NAME){
   for (i in 1:Item_Anzahl){
     summer[i] <- sqrt(wahr[i]*(1-wahr[i]))
   }
-
-  NAME<<- prob_mat
+assign("NAME", prob_mat, envir=globalenv())
+  #NAME<<- prob_mat
   StandD <<-summer
 
 }
