@@ -65,7 +65,8 @@ candy <- function(my_data, NAME){
   }
 assign("NAME", prob_mat, envir=globalenv())
   #NAME<<- prob_mat
-  StandD <<-summer
+assign("StandD", summer, envir=globalenv())  
+  #StandD <<-summer
 
 }
 
