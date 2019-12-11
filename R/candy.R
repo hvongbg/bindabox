@@ -1,4 +1,4 @@
-candy <- function(my_data, NAME){
+candy <- function(my_data, output_matrix = NULL, Item_SD= NULL){
 
 #my_data<-dt
 
@@ -63,10 +63,16 @@ candy <- function(my_data, NAME){
   for (i in 1:Item_Anzahl){
     summer[i] <- sqrt(wahr[i]*(1-wahr[i]))
   }
-assign("NAME", prob_mat, envir=globalenv())
-  #NAME<<- prob_mat
-assign("StandD", summer, envir=globalenv())  
-  #StandD <<-summer
+  
+  if(missing(output_matrix)) {
+  assign("output_matrix", prob_mat, envir=globalenv())
+  } else {assign(output_matrix[], prob_mat, envir=globalenv())
+          }
+  
+   if(missing(Item_SD)) {
+  assign("Item_SD", summer, envir=globalenv())
+  } else {assign(Item_SD[], summer, envir=globalenv())
+          }
 
 }
 
