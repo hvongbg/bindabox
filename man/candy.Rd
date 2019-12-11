@@ -13,7 +13,7 @@ candy(my_data, NAME)
 
 \arguments{
   \item{my_data}{
-my_data is the dataframe entered, containing only the binary data and no ID numbers
+my_data is the dataframe entered, containing only the binary data and no ID numbers. Must be a df or matrix
 }
   \item{NAME}{
 the matrix created is called NAME
