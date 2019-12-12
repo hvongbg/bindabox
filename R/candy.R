@@ -1,7 +1,7 @@
 candy <- function(my_data, output_matrix = NULL, Item_SD= NULL){
 
 #my_data<-dt
-  if (!is.data.frame(dt)) {
+  if (!is.data.frame(my_data)) {
   stop("candy ERROR: data supplied is not a dataframe")
 }
   if(sum(is.na(my_data))!=0) {
