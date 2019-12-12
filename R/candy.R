@@ -1,13 +1,15 @@
 candy <- function(my_data, output_matrix = NULL, Item_SD= NULL){
 
 #my_data<-dt
-
+  if (!is.data.frame(dt)) {
+  stop("candy ERROR: data supplied is not a dataframe")
+}
   if(sum(is.na(my_data))!=0) {
-    stop("missing values found. candy cannot handle missing values")
+    stop("candy ERROR: missing values found. candy cannot handle missing values")
   }
 
   if(any(my_data > 1)) {
-    stop("binary values must be defined with 1 and 0. no other values permitted.
+    stop("candy ERROR: binary values must be defined with 1 and 0. no other values permitted.
          entered data cannot contain ID identifiers--see example data bitest")
   }
 
