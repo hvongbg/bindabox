@@ -65,7 +65,12 @@ candy <- function(my_data, output_matrix = NULL, Item_SD= NULL){
   for (i in 1:Item_Anzahl){
     summer[i] <- sqrt(wahr[i]*(1-wahr[i]))
   }
-
+  
+  #naming output
+  names(prob_mat)<-paste0("A", 1:length(prob_mat), collapse = NULL)
+  row.names(prob_mat)<-colnames(prob_mat)
+  
+  
   if(missing(output_matrix)) {
   assign("output_matrix", prob_mat, envir=globalenv())
   } else {assign(output_matrix[], prob_mat, envir=globalenv())
