@@ -165,8 +165,8 @@ cody <- function(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, 
   }
   
   if(missing(output_matrix)) {
-    assign("output_matrix", prob_mat, envir=globalenv())
-  } else {assign(output_matrix[], prob_mat, envir=globalenv())}
+    assign("output_matrix", out_mat, envir=globalenv())
+  } else {assign(output_matrix[], out_mat, envir=globalenv())}
   
 }
 
