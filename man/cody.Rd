@@ -14,7 +14,7 @@ cody(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, Item_SD = NU
 
 \arguments{
   \item{my_data}{
-my_data is the dataframe entered, containing only the binary data and no ID numbers. Must be a df or matrix
+my_data is the dataframe entered, first the variables with binary data, then continous variables and no ID numbers. Must be a df or matrix
 }
 \item{Item}{
 number of binary Items in dataframe
