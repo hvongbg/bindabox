@@ -133,10 +133,31 @@ cody <- function(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, 
         
       } 
       
-    }else {break}
+    }
     
     
   }
+  
+  #naming output
+  
+  namen <- paste0("A", 1:length(prob_mat), collapse = NULL)
+  
+  
+  
+  prob_mat[is.na(prob_mat)]<-""
+  
+  rownames(prob_mat)<-namen
+  
+  out_mat <- matrix(data = NA, nrow = dim(prob_mat)[1], ncol = dim(prob_mat)[2])
+  
+  rownames(out_mat)<-namen
+  colnames(out_mat)<-namen
+  for (i in 1:dim(prob_mat)[2]) {
+    out_mat[,i] <- c(as.numeric(prob_mat[[i]]))
+  }
+  
+  
+  
   
   if(missing(Item_SD)) {
     assign("Item_SD", summer, envir=globalenv())
