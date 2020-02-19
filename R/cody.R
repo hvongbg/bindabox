@@ -110,8 +110,7 @@ cody <- function(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, 
         
       }
       
-      
-      
+      prob_mat[r+Item_Anzahl,r+Item_Anzahl] <- var(my_data[,r+Item_Anzahl])
       r <- r+1    
     }
     
