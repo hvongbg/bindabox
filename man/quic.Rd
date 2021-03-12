@@ -10,8 +10,11 @@ quadratic function outputs values that increase in a quadratic manner from 1 to 
 \usage{
 quic(Item_count)
 }
-Use number of Items in Model as input 
-
+\arguments{
+  \item{Item_count}{
+Item_count refers to the number of items
+}
+}
 \details{
 Ideal to model an Item Positions Effect for fixed links modelling in lavaan
 }
