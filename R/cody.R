@@ -93,10 +93,8 @@ cody <- function(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, 
   } else {assign(output_matrix[], out_mat, envir=globalenv())
   }
   
-  
-  
-  if(missing(continuous)) {
-    break
+  if (missing(continuous)) {
+    stop("candy ERROR: continous variables missing")
   }else{ 
     
     r <- 1
