@@ -5,8 +5,7 @@
 correlation covariance matrix of binary data AND continous data
 }
 \description{
-calculation of variance covariance matrix for continous data, covariance for continous and binary data, and
-covarniance of binary data
+calculation of variance covariance matrix for continous data, covariance for continous and binary data, and covarniance of binary data
 }
 \usage{
 cody(my_data, Item = NULL, continuous = NULL, output_matrix = NULL, Item_SD = NULL)
