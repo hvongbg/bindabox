@@ -31,9 +31,10 @@ object is a list of SD of the propability of answering any two items correct
 }
 \references{
 
+
 }
 \author{
-
+Helene M. von Gugelberg
 }
 \note{
 goal is to create a toolbox for handling binary data

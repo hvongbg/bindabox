@@ -10,7 +10,7 @@ quadratic function outputs values that increase in a quadratic manner from 1 to 
 \usage{
 quic(Item_count)
 }
-Input the number of items that the new values should be calulated for
+
 
 \details{
 Ideal to model an Item Positions Effect for fixed links modelling in lavaan
@@ -28,7 +28,6 @@ Helene M. von Gugelberg
 %%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 
 \examples{
