@@ -1,10 +1,10 @@
 Package: bindabox
 Type: Package
-Title: Toolbox for Binary Data
-Version: 0.1.0
+Title: Toolbox for fixed-links modelling
+Version: 1.1.0
 Author: Helene M. von Gugelberg
 Maintainer: <vongugelberg.h@gmail.com>
-Description: A package to work with binary data. Calculate correlation, covariance matrix of binary data.
+Description: A package to facilitate fixed-links modelling.
 License: FALSE
 Encoding: UTF-8
 LazyData: true
