@@ -22,7 +22,7 @@ LambdaMatrix <- lavInspect(fit_model, what = "std.all")
   \item{col}{
 select column for which latent variable the variances should be scaled.
 
-scavar(LambdaMatrixlambda, 2)
+scavar(LambdaMatrix$lambda, 2)
 }
 }
 \details{
