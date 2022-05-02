@@ -14,7 +14,7 @@ scavar<- function(LambdaMatrix, col) {
     Lambda_scaled[l] <- sqrt(LamOld[l] / overall)
     
   }
-  cat("Scaling applied according to Schweizer & Troche (2019)")
+  cat("Scaling applied according to Schweizer, Troche & DiStefano (2019)")
   Lambda_scaled
   
 }
